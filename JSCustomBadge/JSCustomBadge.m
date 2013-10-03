@@ -173,7 +173,7 @@
 		UIFont *textFont = [UIFont boldSystemFontOfSize:sizeOfFont];
 		CGSize textSize = [self.badgeText sizeWithFont:textFont];
 		
-        [self.badgeText drawAtPoint:CGPointMake((rect.size.width/2.0f - textSize.width/2.0f),
+        [self.badgeText drawAtPoint:CGPointMake((rect.size.width/2.0f - textSize.width/2.0f) + 1,
                                                 (rect.size.height/2.0f - textSize.height/2.0f))
                            withFont:textFont];
 	}
